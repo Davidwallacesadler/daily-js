@@ -29,6 +29,7 @@ export default {
       const counts = parenthesisCounts.values()
       const delta = Math.abs(counts.next().value - counts.next().value)
       return delta
+      // TODO: Deal with )(
     },
   },
 }
