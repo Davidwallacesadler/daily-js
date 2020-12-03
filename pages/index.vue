@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <parenthesis-balance />
+    <longest-substring />
   </div>
 </template>
 
@@ -10,7 +11,7 @@ export default {}
 
 <style>
 .container {
-  margin: 0 au ParenthesisBalanceto;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
