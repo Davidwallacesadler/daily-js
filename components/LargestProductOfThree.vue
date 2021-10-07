@@ -22,15 +22,15 @@ export default {
         else return false
       }
       const maxValue = Math.abs(Math.max(this.list))
-      const minValue = Math.abs(Math.max(this.list))
+      const minValue = Math.abs(Math.min(this.list))
       if (minValue > maxValue && listHasAtLeastTwoNegative) {
         if (product === 0) {
           // Need to start the product
           product = minValue
+        } else {
+          product = product * minValue
         }
-        product = product * minValue
-        // we have to use a negative number -- check if there exists another in the list
-      } else {
+        // Remove from array
         if (product === 0) {
           product = maxValue
         } else {
